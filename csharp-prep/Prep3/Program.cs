@@ -14,7 +14,7 @@ class Program
         while (ans=="yes")
          {  
             int counting=0;
-            while (guess_number != number)
+            while ((guess_number != number) && (ans=="yes"))
             {
               Console.Write("What is your guess? ");
               guess_number=int.Parse(Console.ReadLine());
@@ -31,20 +31,27 @@ class Program
 
               else
               {
-               Console.WriteLine("You guessed it!!");
-               Console.WriteLine($"You tried {counting} times");
-               counting=0;
+              Console.WriteLine("You guessed it!!");
+              Console.WriteLine($"You tried {counting} times");
+              counting=0;
+              Console.Write("Do you want to play again? yes or not ");
+              ans=Console.ReadLine();  
                }
             }
-        Console.Write("Do you want to play again? yes or not ");
-        ans=Console.ReadLine();
+           
+           
+         }  
             
-        if (ans=="not")
+       
+            
+           if (ans=="not")
              {
                Console.WriteLine("Thanks for playing with me ");
              }
-        
-        
-        }
-    }    
+          else
+          { ans="yes";
+          }
+         
+      }  
+         
 }
