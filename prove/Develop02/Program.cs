@@ -7,14 +7,18 @@ using System;
 class Program
 {
     static void Main(string[] args)
+
     {
+      J j = new J();
+      j._En="";
+
       //File file=new File();
       Journal journal=new Journal();
       Console.WriteLine("                    \n\nWelcome\n\n    Writing my day with JOji!!\n\n");
       bool run = true;
       while(run)
       {
-        
+        j._En="";
         //journal.menu();
         Console.WriteLine("Please select one of the following choices:\n");
         Console.WriteLine("1. Write\n2. Display\n3. Load\n4. Save\n5. Quit\n\n");
@@ -27,7 +31,7 @@ class Program
        {
         case 1:
 
-
+            
             string _prompt = journal.prompts();
             Console.WriteLine("");
             
@@ -70,4 +74,7 @@ class Program
         
       }
    }
-}   
+
+   
+} 
+

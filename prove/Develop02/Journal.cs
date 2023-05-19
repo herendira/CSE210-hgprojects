@@ -20,12 +20,13 @@ public class Journal
     {
         var random = new Random();
         var list = new List<string>{"What was the best part of your day","How do you felt the Spirit this day?","Did you helped someone?","What did you learn?","Which were your feeling during the day?" };
+        
         int index = random.Next(list.Count);
         return list[index];
     }
     
     public string timeEntry()
-    {
+    {   
         DateTime theCurrentTime = DateTime.Now;
         string dateText = theCurrentTime.ToShortDateString();
 

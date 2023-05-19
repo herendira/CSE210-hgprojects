@@ -2,7 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-
+public class J
+{
+    public List<Journal>journallist = new List<Journal>();
+    public string _En;
+}
 public static class FileJournal
 {
     public static void SaveToCsv(List<Journal> journallist)
