@@ -1,6 +1,6 @@
 using System;
 
-class Program
+class Program     //I added some creativity making the program more interactive with the user
 {
     static void Main(string[] args)
    {     
@@ -18,10 +18,10 @@ class Program
                   //Reference and Scripture instances
                   Console.WriteLine("Option A");
                   Reference reference2 = new Reference();
-                  Console.WriteLine(reference2.GetReference("2 Nefi","2","6"));
+                  Console.WriteLine(reference2.GetReference("2 Nefi","2","6"));//Reference Getter
                   Scripture scripture = new Scripture();
            
-                  Console.WriteLine(scripture.GetScripture());
+                  Console.WriteLine(scripture.GetScripture()); //Scripture Getter
                   Console.WriteLine("\n\n");
 
 
@@ -41,18 +41,18 @@ class Program
                      Console.WriteLine(reference2.GetReference("2 Nefi","2","6"));
                      Console.WriteLine(scripture.GetScripture());
                      Console.WriteLine("\nReady??? GO!!! press enter to continue\n");
-                     word.scripsplit();
+                     word.ScripSplit(); // calling word method
                      Console.WriteLine(reference2.GetReference("2 Nefi","2","6"));
-                     word.wordrandom();
+                     word.WordRandom(); // calling word method
                   }
                   if (quiero=="B")
                   { 
                     Console.WriteLine(reference3.GetReference("Alma","35","4","5"));
                     Console.WriteLine(scripture2.GetScripture2());
                     Console.WriteLine("\nReady??? GO!!! press enter to continue\n");
-                    word.scriptsplit2();
+                    word.ScripSplit2();
                     Console.WriteLine(reference3.GetReference("Alma","35","4","5"));
-                    word.wordrandom2();
+                    word.WordRandom2();
                 }
               }
 
