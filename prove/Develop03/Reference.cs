@@ -12,9 +12,9 @@ class Reference
 //constructors
     public Reference()
     {
-        _book="Marcos";
-        _chapter="15";
-        _verse="3";
+        _book="2 Nefi";
+        _chapter="2";
+        _verse="6";
        
     } 
     public Reference(string b,string c,string v1)
