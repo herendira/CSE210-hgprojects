@@ -46,4 +46,5 @@ class Scripture             //Class scripture with all the members variables pri
     return wholescrip2;
    }
 
+
   } 
