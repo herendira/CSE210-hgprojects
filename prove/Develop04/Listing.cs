@@ -5,10 +5,9 @@ using System.Threading;
 
 class Listing : Activity                     
 {
-    //private int _counter;
-    //private string _question;
+   
     protected List<string> _questionList;
-    string _userRes;
+    protected string _userRes;
     
     protected string _question;
 
