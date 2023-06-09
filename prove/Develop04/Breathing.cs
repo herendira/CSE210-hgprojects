@@ -8,7 +8,6 @@ class Breathing : Activity
 {
     private string _in;
     private string _out;
-    //private int _duration;
     
     
     
@@ -22,7 +21,7 @@ class Breathing : Activity
     {
         _in= breathin;
         _out= breathout;
-        //_duration= duration;
+       
 
     } 
    
