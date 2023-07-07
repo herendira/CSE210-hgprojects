@@ -9,7 +9,7 @@ public class Client
     private string _customername;
     private string _wholeaddress;
     private Address _address {get; set;}  
-    public Address Address;  
+    //private Address Address;  
    
     //constructors
     public Client(string customername, string wholeaddress)
