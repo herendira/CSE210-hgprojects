@@ -18,8 +18,6 @@ public class Address
         _street = street;
         _city = city;
         _country = country;
-
-        
     }
 
     public Address(float shipping)
@@ -27,41 +25,22 @@ public class Address
         _shipping = shipping;
     }
 
-    //getters setters
-
-     public void SetStreet(string street)
-    {
-        _street = street;
-    }
-
+    //getters
     public string GetStreet()
     {
         return _street;
-    }
-    public void SetCity(string city)
-    {
-        _city = city;
     }
 
     public string GetCity()
     {
         return _city;
     }
-     public void SetCountry(string country)
-    {
-        _country= country;
-    }
-
+    
     public string GetCountry()
     {
         return _country;
     }
-    public void SetShipping(float shipping)
-    {
-        _shipping= shipping;
-    }
-
-    public float GetShipping()
+     public float GetShipping()
     {
         return _shipping;
     }
@@ -69,7 +48,6 @@ public class Address
     //Methods
     public float EUorNot()
     {
-        
         if(_country == "USA")
         {
             _shipping = 5;
@@ -91,11 +69,5 @@ public class Address
 
         return completeAddress.ToString();
     }
-    
-
-
-
-
-
 
 }
