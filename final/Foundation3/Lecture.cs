@@ -5,7 +5,7 @@ using System.Text;
 
 public class Lecture: Event
 {
-    //Constructors
+    //Variables
     private string _capacity;
     private string _speakername;
    
@@ -17,28 +17,19 @@ public class Lecture: Event
     {
         _capacity = capacity;
         _speakername = speakername;
-      
-
     }
-
-    public void SetCapacity(string capacity)
-    {
-        _capacity = capacity;
-    }
-
+    
+    //Getters
     public string GetCapacity()
     {
         return _capacity;
-    }
-    public void SetSpeakerName(string speakername)
-    {
-        _speakername = speakername;
     }
     public string GetSpeakerName()
     {
         return _speakername;
     }
 
+    //Oevrride Method
     public override string GetEvent()
     {
         return $"{base.GetEvent()}\nSpeaker: {_speakername}\nCapacity: {_capacity}";
