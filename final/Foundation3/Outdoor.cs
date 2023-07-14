@@ -23,12 +23,8 @@ public class Outdoor:Event
 
     }
 
-     public void SetWeather(string weather)
-    {
-        _weather = weather;
-    }
-
-    public string GetWeather()
+    //Getters
+     public string GetWeather()
     {
         return _weather;
     }
@@ -42,6 +38,8 @@ public class Outdoor:Event
         int index = random.Next(weather.Count);
         return weather[index];
     }
+    
+    //Override Method
     public override string GetEvent()
     {
         return $"{base.GetEvent()}\nWeather: {WeatherRandom()}";
