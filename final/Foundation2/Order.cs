@@ -22,27 +22,22 @@ public class Order
     }
     public Order()
     {
-       
-        
+
     }
+
     public Order(Address address)
     {
         _shippingcost= address.EUorNot();
         _address = address;
-        
-        
     }
 
     //Methods
     public void AddProduct(Product product)
     {
-          //_products.Clear();
           _products.Add(product);
-        
     }
 
-    
-    public string GetPackingLabel()
+     public string GetPackingLabel()
     {
         StringBuilder label = new StringBuilder();  // concatenation of strings
         foreach (Product product in _products)
@@ -59,7 +54,7 @@ public class Order
     }
     
     public float TotalOrder()
-{
+    {
     float totalPrice = 0;
     foreach (Product product in _products)
     {
@@ -67,7 +62,7 @@ public class Order
         totalPrice += productTotal;
     }
     return totalPrice;
-}
+    }
 
 }
 
