@@ -18,7 +18,7 @@ public  class Video
     }
 
    
-    //getters, setters
+    //Getters
     public string GetTitle()
     {
         return _title;
