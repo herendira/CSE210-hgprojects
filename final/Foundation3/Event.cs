@@ -37,20 +37,11 @@ public class Event
     }
 
 
-    //Getters and Setters
-    public void SetTitle(string title)
-    {
-        _title = title;
-    }
+    //Getters 
 
     public string GetTitle()
     {
         return _title;
-    }
-
-    public void SetDescription(string description)
-    {
-        _description = description;
     }
 
     public string GetDescription()
@@ -58,36 +49,19 @@ public class Event
         return _description;
     } 
 
-    public void SetDate(string date)
-    {
-        _date = date;
-    }
-
     public string GetDate()
     {
         return _date;
-    }
-    public void SetTime(string time)
-    {
-        _time = time;
     }
 
     public string GetTime()
     {
         return _time;
     }
-    public void SetAddressEvent(Address addressevent)
-    {
-        _addressevent = addressevent;
-    }
 
     public Address GetAddressEvent()
     {
         return _addressevent;
-    }
-    public void SetWeather(Outdoor outdoor)
-    {
-        _outdoor = outdoor;
     }
 
     public Outdoor GetWather()
