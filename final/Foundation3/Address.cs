@@ -5,7 +5,7 @@ using System.Text;
 
 public class Address
 {
-    //Constructors
+    //Variables
     private string _street;
     private string _city;
     private string _country;
@@ -13,7 +13,7 @@ public class Address
     
     
    
-    //constructors
+    //Constructors
     public Address (string number, string street, string city, string country) 
     {
         _number = number;
@@ -23,29 +23,16 @@ public class Address
 
         
     }
- //getters setters
-
-    public void SetStreet(string street)
-    {
-        _street = street;
-    }
+    //getters 
 
     public string GetStreet()
     {
         return _street;
     }
-    public void SetCity(string city)
-    {
-        _city = city;
-    }
 
     public string GetCity()
     {
         return _city;
-    }
-     public void SetCountry(string country)
-    {
-        _country= country;
     }
 
     public string GetCountry()
