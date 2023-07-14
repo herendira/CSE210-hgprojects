@@ -14,11 +14,7 @@ public class Reception:Event
     {
         _registration = registration;
     }
-
-    public void SetRegistration(string registration)
-    {
-        _registration = registration;
-    } 
+    //Getters
 
     public string GetRegistration()
     {
