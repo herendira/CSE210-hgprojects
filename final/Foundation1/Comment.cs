@@ -4,12 +4,12 @@ using System.IO;
 
 public class Comment                 
 {
-    //Constructors
+    //Variables
     public string _commenter;
     public string _comment;
     public List<Comment> _comments;
 
-    //constructors
+    //Constructors
     public Comment(string commenter, string comment)
     {
        _commenter = commenter;
@@ -20,7 +20,7 @@ public class Comment
         _comments = new List<Comment>();
     }
 
-    //getters, setters
+    //Getters
 
     public string GetCommenter()
     {
@@ -31,6 +31,8 @@ public class Comment
     {
         return _comment;
     }
+
+    //Methods
     public void AddingComments(Comment comment)
     {
         _comments.Add(comment);
