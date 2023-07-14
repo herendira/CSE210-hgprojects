@@ -8,12 +8,15 @@ class Program
         ad.GetAddress();
         Lecture l = new Lecture("Lecture","Friend to Friend","Follow the good path to reach all your objectives.","July 20, 2023","18:30", ad,"Evan McEvan","25 places");
         //Lecture Short
+        Console.WriteLine("Short Description");
         Console.WriteLine(l.GetShort());
         Console.WriteLine();
          //Lecture  Standard
+        Console.WriteLine("Standart Description");
         Console.WriteLine(l.GetStandard());
         Console.WriteLine();
          //Lecture Full Detail
+        Console.WriteLine("Full Description");
         Console.WriteLine(l.GetEvent());
         Console.WriteLine(l.GetStandard());
 
@@ -22,12 +25,15 @@ class Program
         ad2.GetAddress();
         Reception r = new Reception("Reception","Creating my own Business","The correct way to make a success business","July 25, 2023","10:30", ad2,"MyBussiness@byui.com");
         //Reception Short
+        Console.WriteLine("Short Description");
         Console.WriteLine(r.GetShort());
         Console.WriteLine();
          //Reception Standard
+        Console.WriteLine("Standart Description");
         Console.WriteLine(r.GetStandard());
         Console.WriteLine();
          //Reception Full Detail
+        Console.WriteLine("Full Description");
         Console.WriteLine(r.GetEvent());
         Console.WriteLine(r.GetStandard());
         
@@ -38,12 +44,15 @@ class Program
         
         Outdoor o = new Outdoor("Outdoor","Water from underground rivers","Water: the biggest problem in northern Mexico, there is hope in the subsoil","July 30, 2023","11:30", ad3, o1.GetWeather());
         //Outdoor Short
+        Console.WriteLine("Short Description");
         Console.WriteLine(o.GetShort());
         Console.WriteLine();
          //Outdoor Standard
+        Console.WriteLine("Standart Description");
         Console.WriteLine(o.GetStandard());
         Console.WriteLine();
          //Outdoor Full Detail
+        Console.WriteLine("Full Description");
         Console.WriteLine(o.GetEvent());
         Console.WriteLine(o.GetStandard());
     }
