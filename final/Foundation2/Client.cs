@@ -5,11 +5,11 @@ using System.Text;
 
 public class Client
 {
-    //Constructors
+    //Variables
     private string _customername;
     private string _wholeaddress;
     private Address _address {get; set;}  
-    //private Address Address;  
+    
    
     //constructors
     public Client(string customername, string wholeaddress)
@@ -26,9 +26,8 @@ public class Client
         _address = address;
     }
 
-   
-
-     public string GetCustName()
+    //Getters and Setters
+    public string GetCustName()
     {
         return _customername;
     }
@@ -40,10 +39,7 @@ public class Client
     {
         return _wholeaddress;
     }
-    public void SetWholeAddress(string wholeaddress)
-    {
-        _wholeaddress = wholeaddress;
-    }
+    
     public Address GetAdd()
     {
        return _address;
