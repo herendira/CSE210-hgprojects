@@ -27,42 +27,23 @@ public class Product
         _productprice = 0;
         _idproduct = "";
         _quantity = 0;
-
     }
     
-    //getters setters
-
-    public void SetProductName(string productname)
-    {
-        _productname = productname;
-    }
+    //getters
 
     public string GetProductName()
     {
         return _productname;
-    }
-    public void SetProductPrice(float productprice)
-    {
-        _productprice = productprice;
     }
 
     public float GetProductPrice()
     {
         return _productprice;
     }
-    public void SetQuantity(float quantity)
-    {
-        _quantity = quantity;
-    }
-
+    
     public float GetQuantity()
     {
         return _quantity;
-    }
-
-     public void SetIdProduct(string idproduct)
-    {
-        _idproduct = idproduct;
     }
 
     public string GetIdProduct()
