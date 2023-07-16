@@ -7,7 +7,7 @@ public class Comment
     //Variables
     public string _commenter;
     public string _comment;
-    public List<Comment> _comments;
+    //public List<Comment> _comments;
 
     //Constructors
     public Comment(string commenter, string comment)
@@ -17,8 +17,9 @@ public class Comment
     }
     public Comment()
     {
-        _comments = new List<Comment>();
+        
     }
+   
 
     //Getters
 
@@ -33,22 +34,22 @@ public class Comment
     }
 
     //Methods
-    public void AddingComments(Comment comment)
-    {
-        _comments.Add(comment);
-    }
+    //public void AddingComments(Comment comment)
+   // {
+   //     _comments.Add(comment);
+   // }
 
-    public int CommentsNum()
-    {
-        return _comments.Count;
-    }
+   // public int CommentsNum()
+  //  {
+   //     return _comments.Count;
+   // }
 
-    public void DisplayComments()
-    {
-        foreach(Comment comment in _comments)
-        {
-            Console.WriteLine($"{comment._commenter}, {comment._comment}");
-        }
+   // public void DisplayComments()
+   // {
+   //     foreach(Comment comment in _comments)
+    //    {
+     //       Console.WriteLine($"{comment._commenter}, {comment._comment}");
+     //   }
         
-    }
+    //}
 }    
