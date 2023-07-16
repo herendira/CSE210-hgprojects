@@ -14,15 +14,15 @@ class Program
         Comment com3 = new Comment("John", "I loved the color you used, now I never forget it!.");
         //Adding Comments
         Comment comment = new Comment();
-        comment.AddingComments(com1);
-        comment.AddingComments(com2);
-        comment.AddingComments(com3);
+        video.AddingComments(com1);
+        video.AddingComments(com2);
+        video.AddingComments(com3);
         //Displaying video 1
         Console.WriteLine($"Video Name: {video._title} ");
         Console.WriteLine($"Author: {video._author} ");
         Console.WriteLine($"Duration: {video._durationinsec} sec ");
-        Console.WriteLine($"Numbers of comments: {comment.CommentsNum()}");
-        comment.DisplayComments();
+        Console.WriteLine($"Numbers of comments: {video.GetComNumber()}");
+        video.DisplayComments();
         
         //Setting VIDEO 2
         Console.WriteLine("");
@@ -33,16 +33,16 @@ class Program
         Comment com7 = new Comment("Maria Carey", "Great idea to start a business.");
         //Adding Comments
         Comment comment2 = new Comment();
-        comment2.AddingComments(com4);
-        comment2.AddingComments(com5);
-        comment2.AddingComments(com6);
-        comment2.AddingComments(com7);
+        video2.AddingComments(com4);
+        video2.AddingComments(com5);
+        video2.AddingComments(com6);
+        video2.AddingComments(com7);
         //Displaying video 2
         Console.WriteLine($"Video Name: {video2._title} ");
         Console.WriteLine($"Author: {video2._author} ");
         Console.WriteLine($"Duration: {video2._durationinsec} sec ");
-        Console.WriteLine($"Numbers of comments: {comment2.CommentsNum()}");
-        comment2.DisplayComments();
+        Console.WriteLine($"Numbers of comments: {video2.GetComNumber()}");
+        video2.DisplayComments();
 
         //Setting VIDEO 3
         Console.WriteLine("");
@@ -54,17 +54,17 @@ class Program
         Comment com12 = new Comment("Miranda", "It would help a good microphone.");
         //Adding Comments
         Comment comment3 = new Comment();
-        comment3.AddingComments(com8);
-        comment3.AddingComments(com9);
-        comment3.AddingComments(com10);
-        comment3.AddingComments(com11);
-        comment3.AddingComments(com12);
+        video3.AddingComments(com8);
+        video3.AddingComments(com9);
+        video3.AddingComments(com10);
+        video3.AddingComments(com11);
+        video3.AddingComments(com12);
         //Displayig Video 3
         Console.WriteLine($"Video Name: {video3._title} ");
         Console.WriteLine($"Author: {video3._author} ");
         Console.WriteLine($"Duration: {video3._durationinsec} sec ");
-        Console.WriteLine($"Numbers of comments: {comment3.CommentsNum()}");
-        comment3.DisplayComments();
+        Console.WriteLine($"Numbers of comments: {video3.GetComNumber()}");
+        video3.DisplayComments();
 
 
 
