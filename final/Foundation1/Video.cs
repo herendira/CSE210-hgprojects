@@ -4,7 +4,6 @@ using System.IO;
 
 public  class Video
 {
-    //Constructors
     public string _title;
     public string _author;
     public float _durationinsec;
