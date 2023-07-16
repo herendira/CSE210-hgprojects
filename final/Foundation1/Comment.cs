@@ -17,7 +17,7 @@ public class Comment
     }
     public Comment()
     {
-        
+
     }
    
 
@@ -33,23 +33,5 @@ public class Comment
         return _comment;
     }
 
-    //Methods
-    //public void AddingComments(Comment comment)
-   // {
-   //     _comments.Add(comment);
-   // }
-
-   // public int CommentsNum()
-  //  {
-   //     return _comments.Count;
-   // }
-
-   // public void DisplayComments()
-   // {
-   //     foreach(Comment comment in _comments)
-    //    {
-     //       Console.WriteLine($"{comment._commenter}, {comment._comment}");
-     //   }
-        
-    //}
+    
 }    
