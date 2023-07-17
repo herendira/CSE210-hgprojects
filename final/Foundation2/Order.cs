@@ -5,7 +5,7 @@ using System.Text;
 
 public class Order
 {
-    //Constructors
+    
     private List<Product> _products;
     private Client _client;
     private Address _address;
